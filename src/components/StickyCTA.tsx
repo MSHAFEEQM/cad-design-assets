@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 export function StickyCTA({ checkoutUrl = "https://superprofile.bio/vp/premium-interior-architecture-designing-assets" }: { price?: string; originalPrice?: string; checkoutUrl?: string }) {
   const [visible, setVisible] = useState(true);
@@ -26,7 +27,11 @@ export function StickyCTA({ checkoutUrl = "https://superprofile.bio/vp/premium-i
             <span className="text-xl sm:text-2xl font-black text-amber-400">₹299</span>
           </div>
         </div>
-        <a href={checkoutUrl} className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black px-4 sm:px-6 py-3 text-sm sm:text-base whitespace-nowrap shadow-lg shadow-amber-500/20 hover:scale-105 transition-all">
+        <a
+          href={checkoutUrl}
+          onClick={() => trackInitiateCheckout(299)}
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black px-4 sm:px-6 py-3 text-sm sm:text-base whitespace-nowrap shadow-lg shadow-amber-500/20 hover:scale-105 transition-all"
+        >
           📥 Get Instant Access
         </a>
         <button

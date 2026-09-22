@@ -9,6 +9,7 @@ import {
 import { Countdown } from "@/components/Countdown";
 import { StickyCTA } from "@/components/StickyCTA";
 import { PaymentBadges } from "@/components/PaymentBadges";
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
 
 const CHECKOUT_URL = "https://superprofile.bio/vp/premium-interior-architecture-designing-assets";
 
@@ -360,6 +361,7 @@ export default function InteriorDesignToolkitLanding() {
           <Reveal>
             <a
               href={CHECKOUT_URL}
+              onClick={() => trackInitiateCheckout(299)}
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black px-5 py-1.5 text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-amber-500/20 hover:scale-105 transition-transform mb-6"
             >
               <span>🔥 MEGA LAUNCH OFFER</span>
@@ -415,6 +417,7 @@ export default function InteriorDesignToolkitLanding() {
             <div className="mt-8 flex flex-col items-center">
               <a
                 href={CHECKOUT_URL}
+                onClick={() => trackInitiateCheckout(299)}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-extrabold text-lg sm:text-2xl px-8 py-5 shadow-2xl shadow-amber-500/40 hover:brightness-110 active:scale-95 transition-all animate-pulse"
               >
                 <span>🔥 Buy Now for Just ₹299</span>
@@ -506,6 +509,7 @@ export default function InteriorDesignToolkitLanding() {
             <div className="mt-12 text-center">
               <a
                 href={CHECKOUT_URL}
+                onClick={() => trackInitiateCheckout(299)}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-lg px-8 py-4 shadow-xl shadow-amber-400/20 hover:scale-105 transition-transform"
               >
                 <span>GET INSTANT ACCESS!</span>
@@ -555,6 +559,7 @@ export default function InteriorDesignToolkitLanding() {
           <div className="mt-12 text-center">
             <a
               href={CHECKOUT_URL}
+              onClick={() => trackInitiateCheckout(299)}
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-base px-8 py-4 shadow-lg shadow-amber-400/20 hover:scale-105 transition-transform"
             >
               <span>GET INSTANT ACCESS!</span>
@@ -601,6 +606,7 @@ export default function InteriorDesignToolkitLanding() {
               </h3>
               <a
                 href={CHECKOUT_URL}
+                onClick={() => trackInitiateCheckout(299)}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-base px-8 py-3.5 shadow-lg shadow-amber-400/20 hover:scale-105 transition-transform"
               >
                 <span>GET INSTANT ACCESS!</span>
@@ -689,6 +695,7 @@ export default function InteriorDesignToolkitLanding() {
               </p>
               <a
                 href={CHECKOUT_URL}
+                onClick={() => trackInitiateCheckout(299)}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-base px-8 py-4 shadow-lg shadow-amber-400/20 hover:scale-105 transition-transform"
               >
                 <span>GET INSTANT ACCESS!</span>
@@ -769,6 +776,7 @@ export default function InteriorDesignToolkitLanding() {
               <div className="mt-8">
                 <a
                   href={CHECKOUT_URL}
+                  onClick={() => trackInitiateCheckout(299)}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-extrabold text-xl sm:text-2xl px-10 py-5 shadow-2xl shadow-amber-500/40 hover:brightness-110 transition-all animate-pulse"
                 >
                   <span>GET INSTANT ACCESS!</span>
@@ -834,6 +842,7 @@ export default function InteriorDesignToolkitLanding() {
               </p>
               <a
                 href={CHECKOUT_URL}
+                onClick={() => trackInitiateCheckout(299)}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-base px-8 py-4 shadow-lg shadow-amber-400/20 hover:scale-105 transition-transform"
               >
                 <span>GET INSTANT ACCESS!</span>
